@@ -1,5 +1,2 @@
-# Librerias utilizadas
+# Conjunto de pruebas unitarias y de coverage
 
-- chalk (npm install chalk)
-
-- yargs (npm install yargs)

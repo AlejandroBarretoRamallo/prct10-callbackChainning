@@ -1,6 +1,5 @@
-# Notas importantes
+# Librerias utilizadas
 
-Esta práctica es identica a la practica 8, la diferencia es que en este caso usamos:
+- chalk (npm install chalk)
 
-- El patron callback chainning en el comando ADD
-- Gracias a este patron podemos aplicar pruebas sobre el comando ADD de manera sencilla
+- yargs (npm install yargs)

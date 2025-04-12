@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "nombre": "Sonic",
-    "descripcion": "Sonic_the_hedgehog",
+    "nombre": "Shadow",
+    "descripcion": "The dark sonic",
     "tipo": 0,
     "genero": 0,
-    "franquicia": "Sonic",
+    "franquicia": "Sonic the hedgehog",
     "numero": 1,
     "esExclusivo": false,
     "caracteristicasEspeciales": "_",
-    "valorMercado": 10
+    "valorMercado": 1
   }
 ]

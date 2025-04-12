@@ -11,7 +11,7 @@
     "test": "vitest run",
     "format": "prettier --write .",
     "lint": "eslint . --ext .ts",
-    "test:ej1": "vitest run ./tests/ej1.spec.ts",
+    "test:ej1": "vitest run ./tests/modifyFunko.spec.ts",
     "doc": "npx typedoc",
     "run:ej1": "tsc-watch --onSuccess \"node dist/complejos.js\"",
     "coverage": "vitest run --coverage"
@@ -29,7 +29,9 @@
   },
   "homepage": "https://github.com/ULL-ESIT-INF-DSI-2425/prct08-filesystem-funko-app-AlejandroBarretoRamallo#readme",
   "devDependencies": {
+    "@types/express": "^5.0.1",
     "@types/yargs": "^17.0.33",
+    "@vitest/coverage-v8": "^3.0.9",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-tsdoc": "^0.4.0",
     "prettier": "^3.5.3",
@@ -40,6 +42,7 @@
   },
   "dependencies": {
     "chalk": "^5.4.1",
+    "express": "^5.1.0",
     "yargs": "^17.7.2"
   }
 }

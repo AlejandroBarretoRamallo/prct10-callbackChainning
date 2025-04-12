@@ -18,12 +18,16 @@ let funko: FunkoPop = {
 
 describe("Asynchronous function deleteFunko", () => {
   test("deleteFunko should remove succesfully a funko", () => {
-    return checkPath('TestUser2', 1, funko).then((datos) => {
-      return deleteFunko(datos[0], datos[1] as number).then((response) => {
-        expect(response.success).toBe(true)
-        expect(response.error).toBe('')
-      }
-      );
+    return new Promise((resolve) => {
+      setTimeout(() => {
+      checkPath('TestUser2', 1, funko).then((datos) => {
+        return deleteFunko(datos[0], datos[1] as number).then((response) => {
+        expect(response.success).toBe(true);
+        expect(response.error).toBe('');
+        resolve(response);
+        });
+      });
+      }, 1000); // Timeout of 1 second
     });
   });
   test("deleteFunko should handle errors", () => {

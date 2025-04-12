@@ -1,5 +1,5 @@
 {
-  "entrypoints": ["src/*.ts"],
+  "entryPoints": ["./src/*.ts"],
   "out": "./docs",
   "readme": "README.md"
 }

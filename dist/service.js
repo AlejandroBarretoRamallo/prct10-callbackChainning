@@ -147,7 +147,6 @@ app.patch('/modify', (req, res) => {
             id: Number(req.query.id),
             funkoPop: req.body
         };
-        console.log(request.funkoPop);
         console.log('Reading request recived');
         funko.checkPath(request.user, request.funkoPop?.id)
             .then((datos) => {
